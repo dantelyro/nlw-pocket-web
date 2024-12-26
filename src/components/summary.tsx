@@ -1,4 +1,4 @@
-import { Plus } from 'lucide-react'
+import { CheckCircle2, Plus } from 'lucide-react'
 import { Button } from './ui/button'
 import { DialogTrigger } from './ui/dialog'
 import { InOrbitIcon } from './in-orbit-icon'
@@ -86,6 +86,7 @@ export function Summary() {
 
                   return (
                     <li key={goal.id} className="flex items-center gap-2">
+                      <CheckCircle2 className="size-4 text-pink-500" />
                       <span className="text-sm text-zinc-400">
                         Você completou "
                         <span className="text-zinc-100">{goal.title}</span>" às{' '}
